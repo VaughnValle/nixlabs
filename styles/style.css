@@ -278,6 +278,7 @@ nav a:hover {
 }
 
 .main_header h5 {
+   font-weight: 400;
    margin-top: 10px;
    text-align: center;
 }
