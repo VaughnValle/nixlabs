@@ -23,52 +23,37 @@
                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
                <nav>
                   <ul>
-                     <li class="navh">
+                     <li>
                         <a class="nav_header" href="#">Desktop Environments</a>
                         <br />
-                     </li>
-                     <li>
                         <a class="nav_content" href="#">KDE Plasma</a>
-                     </li>
-                     <li>
+                        <br />
                         <a class="nav_content" href="#">GNOME</a>
-                     </li>
-                     <li>
+                        <br />
                         <a class="nav_content" href="#">Xfce</a>
-                     </li>
-                     <li>
+                        <br />
                         <a class="nav_content" href="#">MATE</a>
-                     </li>
-                     <li>
+                        <br />
                         <a class="nav_content" href="#">Cinnamon</a>
-                     </li>
-                     <li>
+                        <br />
                         <a class="nav_content" href="#">LXDE</a>
                      </li>
-                     <li class="navh">
+                     <li>
                         <a class="nav_header" href="#"
                            >Tiling Window Managers</a
                         >
-                     </li>
-                     <li>
+                        <br />
                         <a class="nav_content" href="#">i3</a>
-                     </li>
-                     <li>
+                        <br />
                         <a class="nav_content" href="#">Awesome</a>
                         <br />
-                     </li>
-                     <li>
                         <a class="nav_content" href="#">bspwm</a>
                         <br />
-                     </li>
-                     <li>
                         <a class="nav_content" href="#">dwm</a>
                         <br />
-                     </li>
-                     <li>
                         <a class="nav_content" href="#">xmonad</a>
                      </li>
-                     <li class="navh">
+                     <li>
                         <a class="nav_header" href="#">About</a>
                      </li>
                   </ul>

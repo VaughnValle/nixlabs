@@ -55,10 +55,10 @@ header {
 }
 
 nav {
-   padding-top: 20px;
+   padding-top: 0px;
    position: absolute;
    text-align: left;
-   top: 100%;
+   top: 80%;
    right: 0;
    background: var(--navbg);
    width: 100%;
@@ -75,13 +75,19 @@ nav ul {
    list-style: none;
 }
 
+.navh {
+   margin-top: 2em;
+   margin-bottom: 1em;
+}
+
 nav li {
-   margin-bottom: 1.5em;
+   margin-bottom: 0.5em;
    margin-left: 1.35em;
 }
 
 nav a {
-   margin-bottom: 10em;
+   positiom: relative;
+   bottom: 2px;
    color: white;
    text-decoration: none;
    font-family: "Raleway", sans-serif;
