@@ -76,17 +76,17 @@ nav ul {
 }
 
 .navh {
-   margin-top: 2em;
-   margin-bottom: 1em;
+   padding-top: 2em;
+   padding-bottom: 0.5em;
 }
 
 nav li {
-   margin-bottom: 0.5em;
-   margin-left: 1.35em;
+   padding-bottom: 0.5em;
+   padding-left: 1.35em;
 }
 
 nav a {
-   positiom: relative;
+   position: relative;
    bottom: 2px;
    color: white;
    text-decoration: none;
@@ -223,7 +223,7 @@ nav a:hover {
    margin-top: 0px;
    padding-bottom: 1000px;
    color: var(--hwhite);
-   font-size: 1.2em;
+   font-size: 1.3em;
    font-weight: 500;
 }
 
@@ -232,7 +232,7 @@ nav a:hover {
    font-weight: 400;
 }
 
-.nav_content:hover {
+.nav_content:hov er {
    color: white;
 }
 
