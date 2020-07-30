@@ -55,15 +55,15 @@ header {
 }
 
 nav {
+   float: left;
    padding-top: 0px;
-   position: absolute;
+   position: relative;
    text-align: left;
-   top: 80%;
-   right: 0;
+   top: 20%;
+   left: 0;
    background: var(--navbg);
    width: 100%;
-
-   transform: scale(1, 0);
+   height: 100%;
    transform-origin: top;
    opacity: 0;
    transition: opacity 300ms ease-in-out;
@@ -106,7 +106,6 @@ nav a:hover {
 }
 
 .nav-toggle:checked ~ nav {
-   transform: scale(1, 1);
    opacity: 1;
 }
 
