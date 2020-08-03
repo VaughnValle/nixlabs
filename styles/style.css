@@ -1,4 +1,11 @@
+html {
+   width: 100%;
+   height: 100%;
+   font-size: 100%;
+}
 body {
+   width: 100%;
+   height: 100%;
    font-family: "Raleway", sans-serif;
    font-weight: 400;
    font-size: 1em;
@@ -104,7 +111,7 @@ nav a {
    transition: opacity 100ms ease-in-out;
 }
 
-nav a:hover {
+nava: hover {
    color: ;
 }
 
@@ -187,12 +194,12 @@ nav a:hover {
       transform: rotate(225deg);
    }
    /*
-   100% {
-      top: 35px;
-      -webkit-transform: rotate(315deg);
-      transform: rotate(315deg);
-   }
-   */
+    100% {
+       top: 35px;
+       -webkit-transform: rotate(315deg);
+       transform: rotate(315deg);
+    }
+    */
 }
 @keyframes rotcc {
    0% {
@@ -311,13 +318,15 @@ nav a:hover {
 }
 
 hr {
-   width: 80%;
-   display: inline-block;
+   border: none;
+   width: 30px;
    position: relative;
    text-align: left;
    margin-left: 2px;
    margin-right: 80%;
-   width: 50px;
+   color: white;
+   background-color: white;
+   height: 0.5px;
 }
 
 #top_main {
@@ -329,20 +338,30 @@ hr {
 }
 
 .content {
-   padding-top: 50px;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   padding-top: 150px;
 }
 
 .setupbox {
+   position: relative;
    width: 100%;
-   height: 768px;
+   height: 43em;
 }
 
 #lush {
-   background-image: url("../images/lush.png");
+   background: white;
 }
 
 #cer {
-   background-image: url("../images/cer.png");
+   background: #a7d6fd;
+}
+
+.background {
+   object-fit: contain;
+   width: 100%;
+   height: 100%;
 }
 
 /*STYLISH BUTTON*/
@@ -371,10 +390,19 @@ body {
 }
 */
 
+.bt-cont {
+   position: absolute;
+   top: 84%;
+   left: 37%;
+}
+
+#cerul-cont {
+   top: 80%;
+}
+
 button.install {
    position: relative;
-   top: 630px;
-   left: 750px;
+   left: 30%;
    display: inline-block;
    cursor: pointer;
    outline: none;
@@ -416,7 +444,7 @@ button.install .circle {
 }*/
 
 #cerul .circle {
-   background: #a7d6fd;
+   background: #455364;
 }
 
 button.install .circle .icon {
@@ -457,8 +485,8 @@ button.install .circle .icon.arrow::before {
 
 /*cerulean*/
 #cerul .circle .icon.arrow::before {
-   border-top: 0.125rem solid #455364;
-   border-right: 0.125rem solid #455364;
+   border-top: 0.125rem solid #a7d6fd;
+   border-right: 0.125rem solid #a7d6fd;
 }
 
 button.install .button-text {
@@ -480,7 +508,7 @@ button.install .button-text {
 
 /*cerulean*/
 #cerul .button-text {
-   color: #a7d6fd;
+   color: #455364;
 }
 button:hover .circle {
    width: 100%;
@@ -491,13 +519,13 @@ button:hover .circle .icon.arrow {
    transform: translate(1rem, 0);
 }
 #cerul:hover .circle .icon.arrow {
-   background: #455364;
+   background: #a7d6fd;
 }
 button:hover .button-text {
    color: #fff;
 }
 #cerul:hover .button-text {
-   color: #455364;
+   color: #a7d6fd;
 }
 /*
 @supports (display: grid) {
@@ -514,12 +542,105 @@ button:hover .button-text {
       justify-self: center;
    }
 */
+
+.textbox {
+   position: absolute;
+   top: 1%;
+   left: 5%;
+   height: 50%;
+}
+
+#cer-textbox {
+   left: 65%;
+   color: #455364;
+   text-align: left;
+}
+
+#cer-textbox h2,
+#cer-textbox h3 {
+   text-align: right;
+}
+
+.textbox h2 {
+   position: relative;
+   margin-bottom: 10px;
+   font-size: calc(1rem + 3vw);
+   font-weight: 600;
+}
+
+.textbox h3 {
+   margin-top: 20px;
+   margin-left: 4px;
+   font-size: calc(0.6rem + 1vw);
+   font-weight: 500;
+}
+
+.subbox {
+   position: relative;
+   top: 20px;
+   height: 70%;
+   width: 210%;
+}
+
+#cerbox {
+   left: -89%;
+}
+
+.infobox-bold h4,
+.infobox h4 {
+   padding-bottom: 35px;
+}
+
+.infobox-bold {
+   position: absolute;
+}
+
+.infobox-bold h4 {
+   margin: 0;
+   font-size: 1.6em;
+   font-size: calc(0.8rem + 0.6vw);
+   font-weight: 400;
+}
+
+.infobox {
+   position: absolute;
+   left: 14%;
+}
+
+.infobox h4 {
+   margin: 0;
+   font-size: 1.6em;
+   font-size: calc(0.8rem + 0.6vw);
+   font-weight: 300;
+}
+
+#add-bold {
+   position: absolute;
+   left: 40%;
+}
+
+#add {
+   position: absolute;
+   left: 58%;
+}
+
+#lush-hr {
+   color: #1d1d1f;
+   background-color: #1d1d1f;
+}
+
+#cer-hr {
+   left: 92%;
+   color: #455364;
+   background-color: #455364;
+}
+
 /*for pc*/
 @media screen and (min-width: 670px) {
-   /*   
-.nav-toggle-label {
-      display: none;
-   */
+   /*
+    .nav-toggle-label {
+       display: none;
+    */
    .separator {
       font-size: 1.2em;
       display: inline;
