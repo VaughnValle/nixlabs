@@ -80,111 +80,123 @@
          </div>
       </header>
       <div class="main_content">
+	           <img class="logo" id="mlogo" src="images/ivy.png" />
+            <span class="separator" id="mseparator">|</span>
+            <span class="tagline" id="mtagline">Beautify your desktop.</span>
          <div class="main_tag">
-            <span></span>
+		  <ul class="main-list">
+                    <li><a href="#">KDE Plasma</a></li>
+                    <li><a href="#">GNOME</a></li>
+                    <li><a href="#">bspwm</a></li>
+                    <li><a href="#">AwesomeWM</a></li>
+            </ul>
             <hr id="top_main" />
             <h6>Bringing personality to your workspace.</h6>
          </div>
          <div class="main_header">
             <h1>
                Make your Linux desktop beautiful in
-               <a class="main_highlight" href="#">one click.</a>
+               <a class="main_highlight" id="click" href="#">one click.</a>
             </h1>
-            <hr id="bottom_main" />
             <h5>THE SKY IS THE LIMIT</h5>
          </div>
          <div class="main_footer">
             <br />
             <button class="main_button">BROWSE SETUPS</button>
+	    <hr id="bottom_main" />
          </div>
       </div>
       <div class="content">
-         <div class="setupbox" id="lush">
-            <div class="textbox">
-               <div class="headbox">
-                  <h2>Lush</h2>
-                  <h3>A Nature-inspired theme for your desktop.</h3>
-                  <br />
-                  <hr id="lush-hr" />
-                  <br />
+         <div class="sub-content">
+            <div class="setupbox" id="lush">
+               <div class="textbox">
+                  <div class="headbox">
+                     <h2>Lush</h2>
+                     <h3>A Nature-inspired theme for your desktop.</h3>
+                     <br />
+                     <hr id="lush-hr" />
+                     <br />
+                  </div>
+                  <div class="subbox">
+                     <div class="infobox-bold">
+                        <h4>OS:</h4>
+                        <h4>Shell:</h4>
+                        <h4>DE:</h4>
+                        <h4>WM:</h4>
+                        <h4>WM Theme:</h4>
+                     </div>
+                     <div class="infobox">
+                        <h4>Pop! OS 20.04 LTS</h4>
+                        <h4>bash 5.8.16</h4>
+                        <h4>Plasma</h4>
+                        <h4>KWin</h4>
+                        <h4>Breeze Enhanced</h4>
+                     </div>
+                     <div class="infobox-bold" id="add-bold">
+                        <h4>Theme:</h4>
+                        <h4>Terminal:</h4>
+                        <h4>Terminal Font:</h4>
+                        <h4>Kvantum Theme:</h4>
+                     </div>
+                     <div class="infobox" id="add">
+                        <h4>Sweet [Plasma], Papirus-Dark [GTK2/3]</h4>
+                        <h4>konsole</h4>
+                        <h4>Source Code Pro 10</h4>
+                        <h4>Sweet Mars Transparent</h4>
+                     </div>
+                     <div class="bt-cont">
+                        <button class="install">
+                           <span class="circle" aria-hidden="true">
+                              <span class="icon arrow"></span>
+                           </span>
+                           <span class="button-text">INSTALL</span>
+                        </button>
+                     </div>
+                  </div>
                </div>
-               <div class="subbox">
-                  <div class="infobox-bold">
-                     <h4>OS:</h4>
-                     <h4>Shell:</h4>
-                     <h4>DE:</h4>
-                     <h4>WM:</h4>
-                     <h4>WM Theme:</h4>
-                  </div>
-                  <div class="infobox">
-                     <h4>Pop! OS 20.04 LTS</h4>
-                     <h4>bash 5.8.16</h4>
-                     <h4>Plasma</h4>
-                     <h4>KWin</h4>
-                     <h4>Breeze Enhanced</h4>
-                  </div>
-                  <div class="infobox-bold" id="add-bold">
-                     <h4>Theme:</h4>
-                     <h4>Terminal:</h4>
-                     <h4>Terminal Font:</h4>
-                     <h4>Kvantum Theme:</h4>
-                  </div>
-                  <div class="infobox" id="add">
-                     <h4>Sweet [Plasma], Papirus-Dark [GTK2/3]</h4>
-                     <h4>konsole</h4>
-                     <h4>Source Code Pro 10</h4>
-                     <h4>Sweet Mars Transparent</h4>
-                  </div>
-               </div>
-            </div>
-            <img src="images/lush.png" class="background" />
-            <div class="bt-cont">
-               <button class="install">
-                  <span class="circle" aria-hidden="true">
-                     <span class="icon arrow"></span>
-                  </span>
-                  <span class="button-text">INSTALL</span>
-               </button>
+               <img src="images/lush.png" class="background" />
             </div>
          </div>
-         <div class="setupbox" id="cer">
-            <div class="textbox" id="cer-textbox">
-               <h2>Cerulean</h2>
-               <h3>A Material blue theme for your desktop.</h3>
-               <br />
-               <hr id="cer-hr" />
-               <br />
-               <div class="subbox" id="cerbox">
-                  <div class="infobox-bold">
-                     <h4>OS:</h4>
-                     <h4>Shell:</h4>
-                     <h4>WM:</h4>
-                  </div>
-                  <div class="infobox">
-                     <h4>Pop! OS 20.04 LTS</h4>
-                     <h4>zsh 5.8.16</h4>
-                     <h4>bspwm</h4>
-                  </div>
-                  <div class="infobox-bold" id="add-bold">
-                     <h4>Theme:</h4>
-                     <h4>Terminal:</h4>
-                     <h4>Terminal Font:</h4>
-                  </div>
-                  <div class="infobox" id="add">
-                     <h4>Orchis-dark-compact [GTK2/3]</h4>
-                     <h4>Alacritty</h4>
-                     <h4>Source Code Pro 10</h4>
+         <div class="sub-content">
+            <div class="setupbox" id="cer">
+               <div class="textbox" id="cer-textbox">
+                  <h2>Cerulean</h2>
+                  <h3>A Material blue theme for your desktop.</h3>
+                  <br />
+                  <hr id="cer-hr" />
+                  <br />
+                  <div class="subbox" id="cerbox">
+                     <div class="infobox-bold">
+                        <h4>OS:</h4>
+                        <h4>Shell:</h4>
+                        <h4>WM:</h4>
+                     </div>
+                     <div class="infobox">
+                        <h4>Pop! OS 20.04 LTS</h4>
+                        <h4>zsh 5.8.16</h4>
+                        <h4>bspwm</h4>
+                     </div>
+                     <div class="infobox-bold" id="add-bold">
+                        <h4>Theme:</h4>
+                        <h4>Terminal:</h4>
+                        <h4>Terminal Font:</h4>
+                     </div>
+                     <div class="infobox" id="add">
+                        <h4>Orchis-dark-compact [GTK2/3]</h4>
+                        <h4>Alacritty</h4>
+                        <h4>Source Code Pro 10</h4>
+                     </div>
+                     <div class="bt-cont" id="cerul-cont">
+                        <button class="install" id="cerul">
+                           <span class="circle" aria-hidden="true">
+                              <span class="icon arrow"></span>
+                           </span>
+                           <span class="button-text">INSTALL</span>
+                        </button>
+                     </div>
                   </div>
                </div>
-            </div>
-            <img src="images/cer.png" class="background" />
-            <div class="bt-cont" id="cerul-cont">
-               <button class="install" id="cerul">
-                  <span class="circle" aria-hidden="true">
-                     <span class="icon arrow"></span>
-                  </span>
-                  <span class="button-text">INSTALL</span>
-               </button>
+               <img src="images/cer.png" class="background" />
             </div>
          </div>
       </div>
