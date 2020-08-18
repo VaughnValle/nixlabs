@@ -262,7 +262,7 @@ nav a:hover {
    font-weight: 600;
    font-size: 1em;
    color: white;
-   height: 80%;
+   height: calc(49rem + 10vh);
    width: 100%;
    background-color: var(--navbg);
    padding-top: 50px;
@@ -410,8 +410,8 @@ hr {
    z-index: 3;
    object-fit: cover;
    width: 100%;
-   height: calc(850px + 10vw + 8vh);
-   padding-top: 400px;
+   height: calc(550px + 10vw + 8vh);
+   padding-top: 100px;
 }
 
 .setupbox {
