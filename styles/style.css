@@ -730,6 +730,7 @@ button:hover .button-text {
 }
 
 #cer-hr {
+   border: none;
    height: 1px;
    float: right;
    margin-right: 2px;
