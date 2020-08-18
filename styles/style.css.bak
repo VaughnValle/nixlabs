@@ -290,7 +290,6 @@ nav a:hover {
 .main_header {
    position: relative;
    top: -55px;
-   left: 7px;
    letter-spacing: 0.5px;
 }
 
@@ -349,15 +348,10 @@ nav a:hover {
    color: white;
 }
 
-.main_footer{
-   position: relative;
-   top: -20px; 
-
-}
-
 .main_button {
-   margin-top: 0px;
-   margin-left: 10px;
+   position: relative;
+   top: -70px;
+   margin-left: 0px;
    width: 95%;
    font-family: "Raleway", sans-serif;
    font-weight: 500;
@@ -378,6 +372,7 @@ nav a:hover {
 }
 
 hr {
+   border: none;
    width: 30px;
    position: relative;
    text-align: left;
@@ -391,13 +386,13 @@ hr {
 #top_main {
    top: -30px;
    margin-bottom: 80px;
-   margin-left: 3px;
 }
 
 #bottom_main {
+   position: relative;
    display: block;
-   margin-top: 80px;
-   margin-left: 10px;
+   top: 0px;
+   margin-top: 20px;
 }
 
 .sub-content {
@@ -410,8 +405,8 @@ hr {
    z-index: 3;
    object-fit: cover;
    width: 100%;
-   height: calc(850px + 10vw + 8vh);
-   padding-top: 400px;
+   height: 140%;
+   padding-top: calc(30rem - 18vh);
 }
 
 .setupbox {
@@ -462,9 +457,15 @@ hr {
 
 .bt-cont {
    position: static;
-   padding-top: 220px;
+   padding-top: 25%;
    padding-left: 20%;
-   font-size: calc(7px + 0.4vw + 0.4vh);
+   top: 75%;
+   left: 37%;
+}
+
+#cerul-cont {
+   padding-top: 40%;
+   top: 82%;
 }
 
 button.install {
@@ -482,7 +483,7 @@ button.install {
    font-family: inherit;
 }
 button.install {
-   width: 12em;
+   width: 12rem;
    height: auto;
 }
 button.install .circle {
@@ -491,10 +492,10 @@ button.install .circle {
    position: relative;
    display: block;
    margin: 0;
-   width: 3em;
-   height: 3em;
+   width: 3rem;
+   height: 3rem;
    background: #1d1d1f;
-   border-radius: 1.625em;
+   border-radius: 1.625rem;
 }
 
 /*cerulean button
@@ -504,10 +505,10 @@ button.install .circle {
    position: relative;
    display: block;
    margin: 0;
-   width: 3em;
-   height: 3em;
+   width: 3rem;
+   height: 3rem;
    background: #a7d6fd;
-   border-radius: 1.625em;
+   border-radius: 1.625rem;
 }*/
 
 #cerul .circle {
@@ -532,28 +533,28 @@ button.install .circle .icon {
 button.install .circle .icon.arrow {
    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-   left: 0.625em;
-   width: 1.125em;
-   height: 0.125em;
+   left: 0.625rem;
+   width: 1.125rem;
+   height: 0.125rem;
    background: none;
 }
 button.install .circle .icon.arrow::before {
    position: absolute;
    content: "";
-   top: -0.25em;
-   right: 0.0625em;
-   width: 0.625em;
-   height: 0.625em;
-   border-top: 0.125em solid #fff;
-   border-right: 0.125em solid #fff;
+   top: -0.25rem;
+   right: 0.0625rem;
+   width: 0.625rem;
+   height: 0.625rem;
+   border-top: 0.125rem solid #fff;
+   border-right: 0.125rem solid #fff;
    -webkit-transform: rotate(45deg);
    transform: rotate(45deg);
 }
 
 /*cerulean*/
 #cerul .circle .icon.arrow::before {
-   border-top: 0.125em solid #a7d6fd;
-   border-right: 0.125em solid #a7d6fd;
+   border-top: 0.125rem solid #a7d6fd;
+   border-right: 0.125rem solid #a7d6fd;
 }
 
 button.install .button-text {
@@ -564,8 +565,8 @@ button.install .button-text {
    left: 0;
    right: 0;
    bottom: 0;
-   padding: 0.75em 0;
-   margin: 0 0 0 1.85em;
+   padding: 0.75rem 0;
+   margin: 0 0 0 1.85rem;
    color: #1d1d1f;
    font-weight: 700;
    line-height: 1.6;
@@ -582,8 +583,8 @@ button:hover .circle {
 }
 button:hover .circle .icon.arrow {
    background: #fff;
-   -webkit-transform: translate(1em, 0);
-   transform: translate(1em, 0);
+   -webkit-transform: translate(1rem, 0);
+   transform: translate(1rem, 0);
 }
 #cerul:hover .circle .icon.arrow {
    background: #a7d6fd;
@@ -716,7 +717,7 @@ button:hover .button-text {
 }
 
 #cerbox #add {
-   width: 49.5%;
+   width: 300px;
    left: 64.4%;
 }
 /*
@@ -766,6 +767,10 @@ button:hover .button-text {
       margin-top: 30px;
    }
 
+   .main_button {
+      top: -45px;
+   }
+
    /* #bottom_main {
       top: 180px;
    }*/
@@ -805,4 +810,20 @@ button:hover .button-text {
    }
 }*/
 
+@media screen and (min-width: 1420px) {
+   #cerbox #add {
+      width: 350px;
+   }
+}
 
+@media screen and (max-height: 700px) {
+   .content {
+      height: 160%;
+   }
+}
+
+@media screen and (max-height: 620px) {
+   .content {
+      height: 180%;
+   }
+}
