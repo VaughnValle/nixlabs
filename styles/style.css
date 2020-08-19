@@ -1,174 +1,180 @@
 html {
-   width: 100%;
-   height: 100%;
-   font-size: calc(8px + 0.5vw + 0.5vh);
+	width: 100%;
+	height: 100%;
+	font-size: calc(8px + 0.5vw + 0.5vh);
 }
+
+@font-face {
+	font-family: cyberpunk;
+	src: url(../fonts/Cyberpunk-Regular.ttf);
+}
+
 body {
-   width: 100%;
-   height: 100%;
-   font-family: "Raleway", sans-serif;
-   font-weight: 400;
-   font-size: 1em;
-   margin: 0;
-   background-color: var(--navbg);
+	width: 100%;
+	height: 100%;
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	margin: 0;
+	background-color: var(--navbg);
 }
 
 :root {
-   --navbg: #1a1a1a;
-   --hgrey: #7d7d7d;
-   --hwhite: #c9c9c9;
+	--navbg: #1a1a1a;
+	--hgrey: #7d7d7d;
+	--hwhite: #c9c9c9;
 }
 
 *,
 *::before,
 *::after {
-   box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* navigation styles start*/
 
 header {
-   background: var(--navbg);
-   text-align: center;
-   position: fixed;
-   z-index: 2;
-   width: 100%;
-   height: 70px;
+	background: var(--navbg);
+	text-align: center;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	height: 70px;
 }
 
 .logo {
-   float: left;
-   position: relative;
-   margin: 0;
-   left: 20px;
-   top: -15px;
-   width: 150.33px;
-   height: 100px;
+	float: left;
+	position: relative;
+	margin: 0;
+	left: 20px;
+	top: -15px;
+	width: 150.33px;
+	height: 100px;
 }
 
 .separator {
-   float: left;
-   position: relative;
-   left: 60px;
-   top: 22px;
-   color: white;
-   font-family: "Raleway", sans-serif;
-   font-weight: 300;
-   font-size: 1em;
-   display: none;
+	float: left;
+	position: relative;
+	left: 60px;
+	top: 22px;
+	color: white;
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	display: none;
 }
 
 .tagline {
-   float: left;
-   position: relative;
-   left: 100px;
-   top: 23px;
-   color: white;
-   font-family: "Raleway", sans-serif;
-   font-weight: 300;
-   font-size: 1em;
-   display: none;
+	float: left;
+	position: relative;
+	left: 100px;
+	top: 23px;
+	color: white;
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	display: none;
 }
 
 nav {
-   padding-top: 5px;
-   position: absolute;
-   text-align: left;
-   top: 75%;
-   left: 0;
-   background: var(--navbg);
-   width: 100%;
-   transform-origin: top;
-   opacity: 0;
-   transform: scale(1, 0);
-   transition: transform 300ms ease-in-out;
-   transition: opacity 300ms ease-in-out;
-   z-index: 0;
+	padding-top: 5px;
+	position: absolute;
+	text-align: left;
+	top: 75%;
+	left: 0;
+	background: var(--navbg);
+	width: 100%;
+	transform-origin: top;
+	opacity: 0;
+	transform: scale(1, 0);
+	transition: transform 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
+	z-index: 0;
 }
 
 nav ul {
-   margin: 0;
-   padding: 0;
-   list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .navh {
-   padding-top: 2em;
-   padding-bottom: 0.5em;
+	padding-top: 2em;
+	padding-bottom: 0.5em;
 }
 
 nav li {
-   padding-bottom: 0.5em;
-   padding-left: 1.35em;
+	padding-bottom: 0.5em;
+	padding-left: 1.35em;
 }
 
 nav a {
-   position: relative;
-   bottom: 2px;
-   color: white;
-   text-decoration: none;
-   font-family: "Raleway", sans-serif;
-   font-weight: 600;
-   font-size: 1em;
-   opacity: 0;
-   transition: opacity 100ms ease-in-out;
+	position: relative;
+	bottom: 2px;
+	color: white;
+	text-decoration: none;
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	opacity: 0;
+	transition: opacity 100ms ease-in-out;
 }
 
 nav a:hover {
-   color: white;
+	color: white;
 }
 
 .nav-toggle {
-   display: none;
+	display: none;
 }
 
 .nav-toggle:checked ~ nav {
-   transform: scale(1, 1);
-   opacity: 1;
+	transform: scale(1, 1);
+	opacity: 1;
 }
 
 .nav-toggle:checked ~ nav a {
-   opacity: 1;
-   transition: opacity 250ms ease-in-out 200ms;
+	opacity: 1;
+	transition: opacity 250ms ease-in-out 200ms;
 }
 
 .nav-toggle-label span,
 .nav-toggle-label::before,
 .nav-toggle-label::after {
-   display: block;
-   background: white;
-   height: 2.5px;
-   width: 2em;
-   border-radius: 2px;
-   position: relative;
+	display: block;
+	background: white;
+	height: 2.5px;
+	width: 2em;
+	border-radius: 2px;
+	position: relative;
 }
 
 .nav-toggle-label::before,
 .nav-toggle-label::after {
-   content: "";
-   position: absolute;
+	content: "";
+	position: absolute;
 }
 
 .nav-toggle-label::before {
-   transition: transform 0.1s linear;
-   bottom: 26px;
+	transition: transform 0.1s linear;
+	bottom: 26px;
 }
 
 .nav-toggle:checked ~ .nav-toggle-label span {
-   opacity: 0;
+	opacity: 0;
 }
 
 .nav-toggle:checked ~ .nav-toggle-label::before {
-   -webkit-transform: translateY(-8px);
-   transform: translateY(-8px);
-   animation: rot 0.25s ease-out;
-   animation-delay: 0.15s;
-   animation-fill-mode: forwards;
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+	animation: rot 0.25s ease-out;
+	animation-delay: 0.15s;
+	animation-fill-mode: forwards;
 }
 
 .nav-toggle-label::after {
-   transition: transform 0.1s linear;
-   top: 26px;
+	transition: transform 0.1s linear;
+	top: 26px;
 }
 /*
 .nav-toggle ~ .nav-toggle-label::after {
@@ -179,25 +185,25 @@ nav a:hover {
 }
 */
 .nav-toggle:checked ~ .nav-toggle-label::after {
-   -webkit-transform: translateY(8px);
-   transform: translateY(8px);
-   animation: rotcc 0.25s ease-out;
-   animation-delay: 0.15s;
-   animation-fill-mode: forwards;
+	-webkit-transform: translateY(8px);
+	transform: translateY(8px);
+	animation: rotcc 0.25s ease-out;
+	animation-delay: 0.15s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes rot {
-   0% {
-      top: 35px;
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-   }
-   100% {
-      top: 35px;
-      -webkit-transform: rotate(225deg);
-      transform: rotate(225deg);
-   }
-   /*
+	0% {
+		top: 35px;
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		top: 35px;
+		-webkit-transform: rotate(225deg);
+		transform: rotate(225deg);
+	}
+	/*
     100% {
        top: 35px;
        -webkit-transform: rotate(315deg);
@@ -206,16 +212,16 @@ nav a:hover {
     */
 }
 @keyframes rotcc {
-   0% {
-      top: 35px;
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-   }
-   100% {
-      top: 35px;
-      -webkit-transform: rotate(135deg);
-      transform: rotate(135deg);
-   } /*
+	0% {
+		top: 35px;
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		top: 35px;
+		-webkit-transform: rotate(135deg);
+		transform: rotate(135deg);
+	} /*
    100% {
       top: 35px;
       -webkit-transform: rotate(-315deg);
@@ -225,223 +231,222 @@ nav a:hover {
 }
 
 .nav-toggle-label {
-   color: white;
-   position: absolute;
-   top: 0;
-   right: 0;
-   margin-right: 1em;
-   border: 0px solid red;
-   height: 100%;
-   display: flex;
-   align-items: center;
+	color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 1em;
+	border: 0px solid red;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .nav_header {
-   margin-top: 0px;
-   color: var(--hwhite);
-   font-size: 1.3em;
-   font-weight: 500;
+	margin-top: 0px;
+	color: var(--hwhite);
+	font-size: 1.3em;
+	font-weight: 500;
 }
 
 .nav_content {
-   color: var(--hgrey);
-   font-weight: 400;
+	color: var(--hgrey);
+	font-weight: 400;
 }
 
 .nav_content:hover {
-   color: white;
+	color: white;
 }
 
 .nav_header:hover {
-   color: white;
+	color: white;
 }
 
 .main_content {
-   position: relative;
-   font-family: "Raleway", sans-serif;
-   font-weight: 600;
-   font-size: 1em;
-   color: white;
-   height: calc(49rem + 10vh);
-   width: 100%;
-   background-color: var(--navbg);
-   padding-top: 50px;
-   padding-left: 100px;
-   padding-right: 20px;
-   z-index: 2;
-   text-align: left;
+	position: relative;
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	color: white;
+	height: calc(49rem + 10vh);
+	width: 100%;
+	background-color: var(--navbg);
+	padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 20px;
+	z-index: 2;
+	text-align: left;
 }
 
 .main_tag {
-   padding-top: 200px;
-   padding-left: 10px;
+	padding-top: 200px;
+	padding-left: 10px;
 }
 
 .main_tag h6 {
-   background-color: var(--navbg);
-   color: white;
-   position: relative;
-   top: -55px;
-   font-weight: 300;
-   font-size: 1.2em;
-   margin-bottom: 35px;
+	background-color: var(--navbg);
+	color: white;
+	position: relative;
+	top: -55px;
+	font-weight: 300;
+	font-size: 1.2em;
+	margin-bottom: 35px;
 }
 
 .main_header {
-   position: relative;
-   top: -55px;
-   left: 7px;
-   letter-spacing: 0.5px;
+	position: relative;
+	top: -55px;
+	left: 7px;
+	letter-spacing: 0.5px;
 }
 
 .main_header h1 {
-   position: relative;
-   margin-top: 10px;
-   font-weight: 100;
-   font-size: 1em;
-   line-height: 100px;
+	position: relative;
+	margin-top: 10px;
+	font-weight: 100;
+	font-size: 1em;
+	line-height: 100px;
 }
 
 #click {
-   text-decoration: none;
-   color: #017f7f;
-   cursor: pointer;
+	text-decoration: none;
+	color: #017f7f;
+	cursor: pointer;
 }
 
 #click:hover {
-   right: 10px;
-   color: white;
-   cursor: pointer;
+	right: 10px;
+	color: white;
+	cursor: pointer;
 }
 
 .main_header h5 {
-   font-weight: 400;
-   margin-top: 10px;
-   margin-right: 5%;
-   text-align: center;
+	font-weight: 400;
+	margin-top: 10px;
+	margin-right: 5%;
+	text-align: center;
 }
 
 #mlogo {
-   left: 8px;
+	left: 8px;
 }
 
 .main-list {
-   position: relative;
-   top: -80px;
-   left: -43px;
-   list-style-type: none;
-   display: inline;
+	position: relative;
+	top: -80px;
+	left: -43px;
+	list-style-type: none;
+	display: inline;
 }
 
 .main-list li {
-   display: inline;
+	display: inline;
 }
 
 .main-list a {
-   padding-right: 50px;
-   font-size: 1.3rem;
-   font-weight: 600;
-   color: #333333;
-   text-decoration: none;
+	padding-right: 50px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: #333333;
+	text-decoration: none;
 }
 
 .main-list a:hover {
-   color: white;
+	color: white;
 }
 
-.main_footer{
-   position: relative;
-   top: -20px; 
-
+.main_footer {
+	position: relative;
+	top: -20px;
 }
 
 .main_button {
-   margin-top: 0px;
-   margin-left: 10px;
-   width: 95%;
-   font-family: "Raleway", sans-serif;
-   font-weight: 500;
-   font-size: 1.2em;
-   border: 1px solid #017f7f;
-   display: inline-block;
-   text-align: center;
-   text-decoration: none;
-   background: none;
-   border-radius: 10px;
-   color: white;
-   padding: 16px 32px;
-   cursor: pointer;
+	margin-top: 0px;
+	margin-left: 10px;
+	width: 95%;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+	border: 1px solid #017f7f;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	background: none;
+	border-radius: 10px;
+	color: white;
+	padding: 16px 32px;
+	cursor: pointer;
 }
 
 .main_button:hover {
-   background: #017f7f;
+	background: #017f7f;
 }
 
 hr {
-   width: 30px;
-   position: relative;
-   text-align: left;
-   margin-left: 2px;
-   margin-right: 80%;
-   color: white;
-   background-color: white;
-   height: 0.5px;
+	width: 30px;
+	position: relative;
+	text-align: left;
+	margin-left: 2px;
+	margin-right: 80%;
+	color: white;
+	background-color: white;
+	height: 0.5px;
 }
 
 #top_main {
-   top: -30px;
-   margin-bottom: 80px;
-   margin-left: 3px;
+	top: -30px;
+	margin-bottom: 80px;
+	margin-left: 3px;
 }
 
 #bottom_main {
-   display: block;
-   margin-top: 80px;
-   margin-left: 10px;
+	display: block;
+	margin-top: 80px;
+	margin-left: 10px;
 }
 
 .sub-content {
-   position: static;
-   margin-top: 0px;
-   height: 100%;
+	position: static;
+	margin-top: 0px;
+	height: 100%;
 }
 
 .content {
-   z-index: 3;
-   object-fit: cover;
-   width: 100%;
-   height: calc(550px + 10vw + 8vh);
-   padding-top: 100px;
+	z-index: 3;
+	object-fit: cover;
+	width: 100%;
+	height: calc(550px + 10vw + 8vh);
+	padding-top: 100px;
 }
 
 .setupbox {
-   position: relative;
-   width: 100%;
-   height: 100%;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 #lush {
-   background: white;
+	background: white;
 }
 
 #cer {
-   background: #a7d6fd;
+	background: #a7d6fd;
 }
 
 .background {
-   object-fit: contain;
-   width: 100%;
-   height: 100%;
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
 }
 
 /*STYLISH BUTTON*/
 @import url("https://fonts.googleapis.com/css?family=Mukta:700");
 * {
-   box-sizing: border-box;
+	box-sizing: border-box;
 }
 *::before,
 *::after {
-   box-sizing: border-box;
+	box-sizing: border-box;
 }
 /*
 	body {
@@ -461,40 +466,40 @@ hr {
 	*/
 
 .bt-cont {
-   position: static;
-   padding-top: 220px;
-   padding-left: 20%;
-   font-size: calc(7px + 0.4vw + 0.4vh);
+	position: static;
+	padding-top: 220px;
+	padding-left: 20%;
+	font-size: calc(7px + 0.4vw + 0.4vh);
 }
 
 button.install {
-   position: relative;
-   left: 30%;
-   display: inline-block;
-   cursor: pointer;
-   outline: none;
-   border: 0;
-   vertical-align: middle;
-   text-decoration: none;
-   background: transparent;
-   padding: 0;
-   font-size: inherit;
-   font-family: inherit;
+	position: relative;
+	left: 30%;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	vertical-align: middle;
+	text-decoration: none;
+	background: transparent;
+	padding: 0;
+	font-size: inherit;
+	font-family: inherit;
 }
 button.install {
-   width: 12em;
-   height: auto;
+	width: 12em;
+	height: auto;
 }
 button.install .circle {
-   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-   position: relative;
-   display: block;
-   margin: 0;
-   width: 3em;
-   height: 3em;
-   background: #1d1d1f;
-   border-radius: 1.625em;
+	-webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 3em;
+	height: 3em;
+	background: #1d1d1f;
+	border-radius: 1.625em;
 }
 
 /*cerulean button
@@ -511,17 +516,20 @@ button.install .circle {
 }*/
 
 #cerul .circle {
-   background: #455364;
+	background: #455364;
 }
 
+#elekbt .circle {
+	background: #07001d;
+}
 button.install .circle .icon {
-   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   margin: auto;
-   background: #fff;
+	-webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: #fff;
 }
 
 /*cerulean
@@ -530,69 +538,88 @@ button.install .circle .icon {
 }
 */
 button.install .circle .icon.arrow {
-   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-   left: 0.625em;
-   width: 1.125em;
-   height: 0.125em;
-   background: none;
+	-webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	left: 0.625em;
+	width: 1.125em;
+	height: 0.125em;
+	background: none;
 }
 button.install .circle .icon.arrow::before {
-   position: absolute;
-   content: "";
-   top: -0.25em;
-   right: 0.0625em;
-   width: 0.625em;
-   height: 0.625em;
-   border-top: 0.125em solid #fff;
-   border-right: 0.125em solid #fff;
-   -webkit-transform: rotate(45deg);
-   transform: rotate(45deg);
+	position: absolute;
+	content: "";
+	top: -0.25em;
+	right: 0.0625em;
+	width: 0.625em;
+	height: 0.625em;
+	border-top: 0.125em solid #fff;
+	border-right: 0.125em solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 /*cerulean*/
 #cerul .circle .icon.arrow::before {
-   border-top: 0.125em solid #a7d6fd;
-   border-right: 0.125em solid #a7d6fd;
+	border-top: 0.125em solid #a7d6fd;
+	border-right: 0.125em solid #a7d6fd;
+}
+
+#elekbt .circle .icon.arrow::before {
+	border-top: 0.125em solid #ee00ff;
+	border-right: 0.125em solid #ee00ff;
+}
+#elekbt:hover .circle .icon.arrow::before {
+	border-top: 0.125em solid #00ffff;
+	border-right: 0.125em solid #00ffff;
 }
 
 button.install .button-text {
-   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   padding: 0.75em 0;
-   margin: 0 0 0 1.85em;
-   color: #1d1d1f;
-   font-weight: 700;
-   line-height: 1.6;
-   text-align: center;
-   text-transform: uppercase;
+	-webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0.75em 0;
+	margin: 0 0 0 1.85em;
+	color: #1d1d1f;
+	font-weight: 700;
+	line-height: 1.6;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 /*cerulean*/
 #cerul .button-text {
-   color: #455364;
+	color: #455364;
+}
+
+#elekbt .button-text {
+	color: #00ffff;
 }
 button:hover .circle {
-   width: 100%;
+	width: 100%;
 }
 button:hover .circle .icon.arrow {
-   background: #fff;
-   -webkit-transform: translate(1em, 0);
-   transform: translate(1em, 0);
+	background: #fff;
+	-webkit-transform: translate(1em, 0);
+	transform: translate(1em, 0);
 }
 #cerul:hover .circle .icon.arrow {
-   background: #a7d6fd;
+	background: #a7d6fd;
+}
+#elekbt:hover .circle .icon.arrow {
+	background: #00ffff;
 }
 button:hover .button-text {
-   color: #fff;
+	color: #fff;
 }
 #cerul:hover .button-text {
-   color: #a7d6fd;
+	color: #a7d6fd;
+}
+#elekbt:hover .button-text {
+	color: #ee00ff;
 }
 /*
 @supports (display: grid) {
@@ -611,113 +638,113 @@ button:hover .button-text {
 */
 
 .textbox {
-   position: absolute;
-   top: 1%;
-   left: 100px;
-   height: 50%;
+	position: absolute;
+	top: 1%;
+	left: 100px;
+	height: 50%;
 }
 
 #cer-textbox {
-   left: 72%;
-   margin-right: 80px;
-   color: #455364;
-   text-align: left;
+	left: 72%;
+	margin-right: 80px;
+	color: #455364;
+	text-align: left;
 }
 
 #cer-textbox h2,
 #cer-textbox h3 {
-   text-align: right;
+	text-align: right;
 }
 
 .textbox h2 {
-   position: relative;
-   margin-bottom: 10px;
-   font-size: 3.2rem;
-   font-weight: 600;
+	position: relative;
+	margin-bottom: 10px;
+	font-size: 3.2rem;
+	font-weight: 600;
 }
 
 .textbox h3 {
-   margin-top: 20px;
-   margin-right: 0px;
-   font-size: 1.4rem;
-   font-weight: 500;
+	margin-top: 20px;
+	margin-right: 0px;
+	font-size: 1.4rem;
+	font-weight: 500;
 }
 
 #cer-textbox h3 {
-   text-align: right;
-   margin-left: -67%;
+	text-align: right;
+	margin-left: -67%;
 }
 
 .subbox {
-   position: relative;
-   top: 20px;
-   height: 70%;
-   width: 210%;
+	position: relative;
+	top: 20px;
+	height: 70%;
+	width: 210%;
 }
 
 #cerbox {
-   float: right;
-   margin-right: 40px;
-   width: 190%;
+	float: right;
+	margin-right: 40px;
+	width: 190%;
 }
 
 .infobox-bold h4,
 .infobox h4 {
-   padding-bottom: 35px;
+	padding-bottom: 35px;
 }
 
 .infobox-bold {
-   position: absolute;
+	position: absolute;
 }
 
 .infobox-bold h4,
 .infobox h4 {
-   margin: 0;
-   font-size: 1em;
+	margin: 0;
+	font-size: 1em;
 }
 
 .infobox-bold h4 {
-   font-weight: 500;
+	font-weight: 500;
 }
 
 .infobox {
-   position: absolute;
-   left: 14%;
+	position: absolute;
+	left: 14%;
 }
 
 .infobox h4 {
-   font-weight: 300;
+	font-weight: 300;
 }
 
 #add-bold {
-   position: absolute;
-   left: 40%;
+	position: absolute;
+	left: 40%;
 }
 
 #add {
-   position: absolute;
-   left: 58%;
+	position: absolute;
+	left: 58%;
 }
 
 #cerbox .infobox-bold {
-   left: -30%;
+	left: -30%;
 }
 
 #cerbox .infobox {
-   left: -10%;
+	left: -10%;
 }
 
 #cerbox #add-bold {
-   left: 35%;
+	left: 35%;
 }
 
 #cerbox #add h4 {
-   position: relative;
+	position: relative;
 }
 
 #cerbox #add {
-   width: 49.5%;
-   left: 64.4%;
+	width: 49.5%;
+	left: 64.4%;
 }
 /*
 #cerbox #add h4 {
@@ -725,78 +752,142 @@ button:hover .button-text {
 }*/
 
 #lush-hr {
-   color: #1d1d1f;
-   background-color: #1d1d1f;
+	color: #1d1d1f;
+	background-color: #1d1d1f;
 }
 
 #cer-hr {
-   border: none;
-   height: 1px;
-   float: right;
-   margin-right: 2px;
-   color: #455364;
-   background-color: #455364;
+	border: none;
+	height: 1px;
+	float: right;
+	margin-right: 2px;
+	color: #455364;
+	background-color: #455364;
 }
 
+#elek {
+	background-color: #07001d;
+}
+.img_head {
+	width: 115%;
+	position: absolute;
+	top: -11rem;
+}
+
+#elek-bg {
+	float: right;
+	margin-left: 0rem;
+	position: absolute;
+	width: 32%;
+	left: 64%;
+}
+
+#elek .headbox {
+	position: relative;
+}
+
+#elek-box {
+	top: 30%;
+	font-family: cyberpunk;
+}
+
+#elek-box h3 {
+	display: inline-block;
+	margin-right: 10px;
+	word-spacing: 10px;
+}
+
+#elekpinky {
+	color: #ee00ff;
+	text-align: center;
+	margin-left: 70px;
+}
+
+#elekblu {
+	color: #00ffff;
+}
+
+#elek-box .infobox-bold,
+#elek-box #add-bold {
+	color: #ee00ff;
+}
+
+#elek-box .infobox,
+#elek-box #add {
+	color: #00ffff;
+}
+/*
+#elek-box .infobox{
+   left: 18%;
+}
+
+#elek-box #add-bold{
+   left: 48%;
+}
+
+#elek-box #add{
+   left: 71%;
+}
+*/
 /*for pc*/
 @media screen and (min-width: 670px) {
-   /*
+	/*
     .nav-toggle-label {
        display: none;
     */
-   .separator {
-      font-size: 1.2em;
-      display: inline;
-   }
+	.separator {
+		font-size: 1.2em;
+		display: inline;
+	}
 
-   .tagline {
-      display: block;
-   }
+	.tagline {
+		display: block;
+	}
 
-   .main_header h1 {
-      margin-right: 100px;
-      font-size: 2.8em;
-      line-height: 100px;
-   }
+	.main_header h1 {
+		margin-right: 100px;
+		font-size: 2.8em;
+		line-height: 100px;
+	}
 
-   .main_header {
-      top: -20px;
-   }
+	.main_header {
+		top: -20px;
+	}
 
-   .main_header h5 {
-      margin-top: 30px;
-   }
+	.main_header h5 {
+		margin-top: 30px;
+	}
 
-   /* #bottom_main {
+	/* #bottom_main {
       top: 180px;
    }*/
-   .main_content h1 {
-      padding-right: 50px;
-   }
+	.main_content h1 {
+		padding-right: 50px;
+	}
 }
 
 @media screen and (min-width: 870px) {
-   .main_header h5 {
-      padding-left: 0px;
-      text-align: left;
-   }
+	.main_header h5 {
+		padding-left: 0px;
+		text-align: left;
+	}
 
-   .main_button {
-      width: unset;
-      padding: 16px 60px;
-   }
+	.main_button {
+		width: unset;
+		padding: 16px 60px;
+	}
 
-   .main_header h1 {
-      line-height: 120px;
-      font-size: 3em;
-      padding-right: 100px;
-   }
+	.main_header h1 {
+		line-height: 120px;
+		font-size: 3em;
+		padding-right: 100px;
+	}
 }
 
 @media screen and (min-width: 1160px) {
-   .main_header h1 {
-      font-size: 4em;
-   }
+	.main_header h1 {
+		font-size: 4em;
+	}
 }
 
 /*
@@ -805,5 +896,3 @@ button:hover .button-text {
       top: 80%;
    }
 }*/
-
-
