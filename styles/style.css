@@ -778,8 +778,8 @@ button:hover .button-text {
 	float: right;
 	margin-left: 0rem;
 	position: absolute;
-	width: 32%;
-	left: 64%;
+	width: 31%;
+	left: 65%;
 }
 
 #elek .headbox {
@@ -788,13 +788,13 @@ button:hover .button-text {
 
 #elek-box {
 	top: 30%;
-	font-family: cyberpunk;
 }
 
 #elek-box h3 {
 	display: inline-block;
 	margin-right: 10px;
 	word-spacing: 10px;
+	font-family: cyberpunk;
 }
 
 #elekpinky {
