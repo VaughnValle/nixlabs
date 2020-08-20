@@ -1,4 +1,4 @@
-# Elektropunk
+# NixLabs
 
 <p align="center">
   <img src="https://img.shields.io/badge/MAINTAINED-YES-green?style=for-the-badge">
