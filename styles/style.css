@@ -120,16 +120,16 @@ nav a {
   transition: opacity 100ms ease-in-out;
 }
 
-nav a:hover {
-  color: white;
-}
-
 .main-list a {
   padding-right: 50px;
   font-size: 1.3rem;
   font-weight: 600;
   color: #333;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
 }
 
 .main-list a:hover {
@@ -820,10 +820,3 @@ button:hover .button-text {
     font-size: 4em;
   }
 }
-
-/*
-@media screen and (min-width: 1250px) {
-   .bt-cont {
-      top: 80%;
-   }
-}*/
