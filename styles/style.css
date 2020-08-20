@@ -76,18 +76,6 @@ header {
   display: none;
 }
 
-.main-list a {
-  padding-right: 50px;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #333;
-  text-decoration: none;
-}
-
-.main-list a:hover {
-  color: white;
-}
-
 nav {
   padding-top: 5px;
   position: absolute;
@@ -133,6 +121,18 @@ nav a {
 }
 
 nav a:hover {
+  color: white;
+}
+
+.main-list a {
+  padding-right: 50px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+.main-list a:hover {
   color: white;
 }
 
@@ -211,12 +211,13 @@ nav a:hover {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
-  
+
   100% {
     top: 35px;
     -webkit-transform: rotate(225deg);
     transform: rotate(225deg);
   }
+
 }
 
 @keyframes rotcc {
@@ -225,11 +226,13 @@ nav a:hover {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     top: 35px;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
-  } 
+  }
+
 }
 
 .nav-toggle-label {
@@ -351,7 +354,7 @@ nav a:hover {
 }
 
 .main_button {
-  margin-top: 0px;
+  margin-top: 0;
   margin-left: 10px;
   width: 95%;
   font-family: "Raleway", sans-serif;
@@ -440,22 +443,6 @@ hr {
 *::after {
   box-sizing: border-box;
 }
-/*
-	body {
-	   font-family: "Mukta", sans-serif;
-	   font-size: 1rem;
-	   line-height: 1.5;
-	   display: -webkit-box;
-	   display: flex;
-	   -webkit-box-align: center;
-	   align-items: center;
-	   -webkit-box-pack: center;
-	   justify-content: center;
-	   margin: 0;
-	   min-height: 100vh;
-	   background: #f3f8fa;
-	}
-	*/
 
 .bt-cont {
   position: static;
@@ -477,9 +464,6 @@ button.install {
   padding: 0;
   font-size: inherit;
   font-family: inherit;
-}
-
-button.install {
   width: 12em;
   height: auto;
 }
@@ -575,7 +559,7 @@ button:hover .button-text {
   border-right: 0.125em solid #0ff;
 }
 
-/*cerulean*/
+/* cerulean */
 #cerul .button-text {
   color: #455364;
 }
@@ -624,7 +608,7 @@ button:hover .button-text {
 
 .textbox h3 {
   margin-top: 20px;
-  margin-right: 0px;
+  margin-right: 0;
   font-size: 1.4rem;
   font-weight: 500;
 }
@@ -662,16 +646,12 @@ button:hover .button-text {
 .infobox-bold h4,
 .infobox h4 {
   padding-bottom: 35px;
+  margin: 0;
+  font-size: 1em;
 }
 
 .infobox-bold {
   position: absolute;
-}
-
-.infobox-bold h4,
-.infobox h4 {
-  margin: 0;
-  font-size: 1em;
 }
 
 .infobox-bold h4 {
@@ -739,6 +719,7 @@ button:hover .button-text {
 #elek {
   background-color: #07001d;
 }
+
 .img_head {
   width: 115%;
   position: absolute;
@@ -765,7 +746,7 @@ button:hover .button-text {
   display: inline-block;
   margin-right: 10px;
   word-spacing: 10px;
-  font-family: cyberpunk;
+  font-family: cyberpunk, sans-serif;
 }
 
 #elekpinky {
