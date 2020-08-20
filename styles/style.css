@@ -217,7 +217,6 @@ nav a:hover {
     -webkit-transform: rotate(225deg);
     transform: rotate(225deg);
   }
-
 }
 
 @keyframes rotcc {
@@ -232,7 +231,6 @@ nav a:hover {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
   }
-
 }
 
 .nav-toggle-label {
@@ -400,7 +398,7 @@ hr {
 
 .sub-content {
   position: static;
-  margin-top: 0px;
+  margin-top: 0;
   height: 100%;
 }
 
@@ -697,10 +695,6 @@ button:hover .button-text {
   width: 49.5%;
   left: 64.4%;
 }
-/*
-#cerbox #add h4 {
-     text-align: right;
-}*/
 
 #lush-hr {
   color: #1d1d1f;
